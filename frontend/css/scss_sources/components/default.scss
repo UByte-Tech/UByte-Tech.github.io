@@ -1,0 +1,18 @@
+html {
+}
+body {
+  background-color: $bg;
+  font-family: $font_ppale;
+  font-weight: $medium;
+  -webkit-font-smoothing: antialiased;
+}
+ul {
+  list-style-type: none;
+}
+.table {
+  display: table;
+}
+.table_cell {
+  display: table-cell;
+  vertical-align: middle;
+}

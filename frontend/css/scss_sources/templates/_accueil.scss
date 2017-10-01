@@ -1,0 +1,76 @@
+.container {
+  @include _ctn_rel(90%);
+  @include _center_rel;
+  @include _bk() {
+    width: 1180px;
+  }
+}
+#home {
+  height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-align: center;
+  color: $white;
+  margin-top: 0px;
+  @include _bk() {
+    margin-top: 32vh;
+  }
+  .title {
+    font-weight: $thin;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 40px;
+  }
+  .subtitle {
+    font-weight: $ligmed;
+    padding-bottom: 20px;
+    line-height: 30px;
+  }
+  ul {
+    display: flow-root;
+    padding-bottom: 20px;
+    font-size: 22px;
+    width: 100%;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+    -webkit-margin-start: 0 !important;
+    -webkit-margin-end: 0 !important;
+    -webkit-padding-start: 0 !important;
+    a:-webkit-any-link {
+      display: block;
+      text-decoration: none !important;
+      line-height: 14px;
+    }
+    li {
+      float: none;
+      width: 100%;
+      margin-right: 0px;
+      margin-bottom: 42px;
+      font-size: 16px;
+      @include _bk() {
+        float: left;
+        width: 30%;
+        margin-right: 42px;
+        margin-bottom: 0px;
+        font-size: 22px;
+      }
+      color: $blue;
+      border: 2px solid $blue;
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+    .object_3 {
+      color: $green;
+      border: 2px solid $green;
+      margin-right: 0px;
+    }
+  }
+  .credits {
+    font-weight: $ligmed;
+    color: $grey;
+    font-size: 22px;
+    line-height: 36px;
+    #version {
+    }
+  }
+}

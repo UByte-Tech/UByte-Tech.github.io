@@ -1,0 +1,32 @@
+{
+  "name": "ReadyToLanding_new",
+  "version": "1.0.0",
+  "description": "ReadyToLanding_new",
+  "main": "index.php",
+  "dependencies": {
+    "browser-sync": "latest",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-cssbeautify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-csso": "latest",
+    "gulp-ftp": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-glob": "latest",
+    "gulp-util": "latest",
+    "gulp-watch": "latest",
+    "sweetalert2": "^6.6.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "ReadyToLanding_new"
+  }
+}

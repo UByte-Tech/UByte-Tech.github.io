@@ -1,0 +1,106 @@
+// Fonts
+$arial: 'Arial', sans-serif;
+$georgia: 'Georgia';
+$open_sans: 'Open Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$rdytv: "readytovecto";
+$font_ppale: $roboto;
+
+// Font weight
+$thin              : 100;
+$light             : 300;
+$ligmed            : 400;
+$medium            : 500;
+$bold              : 700;
+$black             : 900;
+
+// Colors
+$red            : #FF1461;
+$orange         : #FF7C72;
+$yellow         : #FBF38C;
+$citrus         : #A6FF8F;
+$green          : #18FF92;
+$darkgreen      : #1CE2B2;
+$turquoise      : #5EF3FB;
+$lightblue      : #61C3FF;
+$blue           : #5A87FF;
+$purple         : #8453E3;
+$lavender       : #C26EFF;
+$pink           : #FB89FB;
+$almost_black   : #111116;
+$white          : #fff;
+$grey           : #979797;
+
+// Project colors
+$bg             : $almost_black;
+
+// Breakpoints
+
+/********* list ***********/
+$mobile            : 380px;
+$tablet_portrait   : 768px;
+$tablet_container  : 980px;
+$tablet_paysage    : 1024px;
+$desktop_container : 1180px;
+$desktop           : 1220px;
+$widescreen        : 1500px;
+/********* list ***********/
+
+$go_breakpoint : $desktop_container; /* choose your default breakpoint in the list above */
+
+@mixin _bk($size: $go_breakpoint) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+// Usefull mixins
+
+@mixin _opacity($color, $opacity) {
+  color: $color;
+  color: rgba($color, $opacity);
+}
+@mixin _hover_c($color, $power: 10%) {
+  color: darken($color, $power);
+}
+@mixin _hover_bg($color, $power: 10%) {
+  background-color: darken($color, $power);
+}
+@mixin _txt_style($color, $size, $line_height, $font_weight, $uppercase, $align, $italic) {
+  color: $color;
+  font-size: $size;
+  line-height: $line_height;
+  font-weight: $font_weight;
+  @if ($uppercase == 1) {
+    text-transform: uppercase;
+  }
+  @if ($align == "left") {
+    text-align: left;
+  }
+  @if ($align == "center") {
+    text-align: center;
+  }
+  @if ($align == "right") {
+    text-align: right;
+  }
+  @if ($italic == 1) {
+    font-style: italic;
+  }
+}
+@mixin _ctn_rel($size) {
+  width: $size;
+  position: relative;
+}
+@mixin _center_rel() {
+  margin-left: auto;
+  margin-right: auto;
+}
+@mixin _before_icon($hex) {
+  &:before {
+    @include icons($hex);
+    line-height: 28px;
+    font-size: 10px;
+    position: relative;
+    top: -1px;
+  }
+}

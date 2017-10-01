@@ -1,0 +1,122 @@
+/*
+Theme Name: ReadyToRumble
+Author: Yellow
+Version: 3.0
+Description: Theme Squelette
+*/
+/********* list ***********/
+/********* list ***********/
+/* choose your default breakpoint in the list above */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: #111116;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.table {
+  display: table;
+}
+
+.table_cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1180px) {
+  .container {
+    width: 1180px;
+  }
+}
+
+#home {
+  height: 100%;
+  margin-top: 0;
+  text-align: center;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (min-width: 1180px) {
+  #home {
+    margin-top: 32vh;
+  }
+}
+
+#home .title {
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 60px;
+  padding-bottom: 40px;
+}
+
+#home .subtitle {
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+#home ul {
+  font-size: 22px;
+  display: flow-root;
+  width: 100%;
+  padding-bottom: 20px;
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+  -webkit-margin-start: 0 !important;
+  -webkit-margin-end: 0 !important;
+  -webkit-padding-start: 0 !important;
+}
+
+#home ul a:-webkit-any-link {
+  line-height: 14px;
+  display: block;
+  text-decoration: none !important;
+}
+
+#home ul li {
+  font-size: 16px;
+  float: none;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 42px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: #5a87ff;
+  border: 2px solid #5a87ff;
+}
+
+@media (min-width: 1180px) {
+  #home ul li {
+    font-size: 22px;
+    float: left;
+    width: 30%;
+    margin-right: 42px;
+    margin-bottom: 0;
+  }
+}
+
+#home ul .object_3 {
+  margin-right: 0;
+  color: #18ff92;
+  border: 2px solid #18ff92;
+}
+
+#home .credits {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #979797;
+}
