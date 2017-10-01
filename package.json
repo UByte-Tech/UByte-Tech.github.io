@@ -4,6 +4,7 @@
   "description": "ReadyToLanding_new",
   "main": "index.php",
   "dependencies": {
+    "aos": "^2.2.0",
     "browser-sync": "latest",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "latest",
